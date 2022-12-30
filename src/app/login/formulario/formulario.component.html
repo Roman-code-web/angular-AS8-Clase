@@ -11,12 +11,17 @@
             </div>
             <button type="submit" class="btn btn-primary" (click)="login(usuario.value,pass.value)">Enviar</button>
         </form>
-        <div #verificacionUsuario>
-            <p class="danger">Verificar usuario y contraseña</p>
-        </div>
     </div>
-</div>
+        <div *ngIf="!validacion && validacion!=undefined">
+            <p class="bg-danger text-light">Verificar usuario y contraseña</p>
+        </div>
 
-<div *ngIf="verificacion">
-    Bienvenido
+
+<div *ngIf="verificacion!=undefined && verificacion">
+    <h2 class="text-center">Bienvenido</h2>
+    <div class="container-fluid">
+        <div>Home</div>
+        <div>Suport</div>
+        <div>Contact</div>
+    </div>
 </div>
