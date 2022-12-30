@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class FormularioComponent {
   usuario:string="Angular";
   password:string="123456";
-  verificacion=false;
+  verificacion!:boolean;
   login(user:string,pass:string){
     if(this.usuario==user && this.password==pass ){
       this.verificacion=true;

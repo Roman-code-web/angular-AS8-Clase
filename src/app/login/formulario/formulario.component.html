@@ -10,7 +10,10 @@
               <input type="text" class="form-control" id="txtpass"  #pass>
             </div>
             <button type="submit" class="btn btn-primary" (click)="login(usuario.value,pass.value)">Enviar</button>
-          </form>
+        </form>
+        <div #verificacionUsuario>
+            <p class="danger">Verificar usuario y contraseña</p>
+        </div>
     </div>
 </div>
 
